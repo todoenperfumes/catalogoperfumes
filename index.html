@@ -1,21 +1,401 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO En Perfumes - Catálogo & Sommelier de Fragancias</title>
-    <meta name="description" content="Catálogo exclusivo de perfumes para Dama, Caballero y Unisex con asesor de aromas inteligente por notas y ocasión." />
-    <meta property="og:title" content="TODO En Perfumes - Catálogo & Sommelier de Fragancias" />
-    <meta property="og:description" content="Catálogo exclusivo de perfumes para Dama, Caballero y Unisex con asesor de aromas inteligente por notas y ocasión." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/index-9ztQJb_W.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D8VYDt-B.css">
-  </head>
-  <body class="bg-[#FAF5ED] text-[#381B0E] antialiased selection:bg-[#E5A836]/30 selection:text-[#381B0E]">
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO En Perfumes - Catálogo Oficial de Fragancias</title>
+  <meta name="description" content="Catálogo oficial de perfumes con 40% OFF en toda la colección. Fragancias de diseñador para Dama, Caballero y Gift Sets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+          },
+          colors: {
+            brand: {
+              cream: '#FAF5ED',
+              dark: '#381B0E',
+              gold: '#E5A836',
+              terracotta: '#8C3C16',
+              sand: '#EADBCA',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #F4EBE0; }
+    ::-webkit-scrollbar-thumb { background: #C49C7A; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #8C3C16; }
+  </style>
+</head>
+<body class="bg-[#FAF5ED] text-[#381B0E] font-sans antialiased selection:bg-[#E5A836]/30 selection:text-[#381B0E]">
+
+  <!-- MARQUESINA SUPERIOR -->
+  <div class="w-full bg-[#34180C] text-[#FFF6EC] py-2 overflow-hidden border-b border-[#251007] select-none sticky top-0 z-50">
+    <div class="flex animate-marquee">
+      <div class="flex items-center shrink-0">
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> 40% OFF EN TODA LA COLECCIÓN</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> ENVÍOS A TODA VENEZUELA</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> FRAGANCIAS 100% ORIGINALES</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> ATENCIÓN PERSONALIZADA POR WHATSAPP</span>
+      </div>
+      <div class="flex items-center shrink-0" aria-hidden="true">
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> 40% OFF EN TODA LA COLECCIÓN</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> ENVÍOS A TODA VENEZUELA</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> FRAGANCIAS 100% ORIGINALES</span>
+        <span class="inline-flex items-center mx-6 gap-3 text-[10px] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#FFF5EB]"><span class="text-[#E5A836]">✦</span> ATENCIÓN PERSONALIZADA POR WHATSAPP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="sticky top-[33px] z-40 bg-[#FAF6EE]/95 backdrop-blur-md border-b border-[#EADFCF] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="#hero" class="flex flex-col items-center select-none text-center group">
+        <span class="font-cinzel font-bold text-2xl md:text-3xl tracking-[0.25em] text-[#381B0E] group-hover:text-[#8C3C16] transition-colors leading-none">TODO</span>
+        <div class="flex items-center justify-center gap-2 text-[#8C6D58] -mt-1.5">
+          <span class="w-6 md:w-8 h-[1px] bg-[#8C6D58]/35"></span>
+          <span class="font-serif italic font-normal text-base md:text-lg tracking-normal">en perfumes</span>
+          <span class="w-6 md:w-8 h-[1px] bg-[#8C6D58]/35"></span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-[11px] tracking-[0.2em] uppercase font-semibold text-[#664936]">
+        <button onclick="setCategory('Todos')" class="nav-link py-1 border-b-2 border-[#8C3C16] text-[#8C3C16] transition-colors" data-cat="Todos">Colección</button>
+        <button onclick="setCategory('Dama')" class="nav-link py-1 border-b-2 border-transparent hover:text-[#8C3C16] transition-colors" data-cat="Dama">Dama</button>
+        <button onclick="setCategory('Caballero')" class="nav-link py-1 border-b-2 border-transparent hover:text-[#8C3C16] transition-colors" data-cat="Caballero">Caballero</button>
+        <button onclick="setCategory('Gift Set')" class="nav-link py-1 border-b-2 border-transparent hover:text-[#8C3C16] transition-colors" data-cat="Gift Set">Gift Set</button>
+        <a href="#opiniones" class="py-1 border-b-2 border-transparent hover:text-[#8C3C16] transition-colors">Opiniones</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="relative hidden sm:block">
+          <input id="navSearchInput" type="text" placeholder="Buscar perfume..." oninput="handleSearch(this.value)" class="w-44 lg:w-56 pl-8 pr-3 py-1.5 text-xs bg-[#FFFDF9] border border-[#E3D3C1] rounded-full text-[#381B0E] placeholder:text-[#A88876] focus:outline-none focus:border-[#C46726] transition-all">
+          <svg class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#9A7A66]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <button onclick="toggleFavoritesDrawer()" class="relative p-2 rounded-full hover:bg-[#EFE3D3] transition-colors text-[#381B0E]" title="Mis Favoritos">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+          <span id="favCountBadge" class="hidden absolute top-0 right-0 w-4 h-4 bg-[#B83226] text-white text-[9px] font-bold rounded-full flex items-center justify-center">0</span>
+        </button>
+        <button onclick="toggleCartDrawer()" class="relative p-2.5 bg-[#8C3C16] hover:bg-[#A5471B] text-white rounded-full transition-all shadow-sm flex items-center gap-1.5" title="Mi Selección">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span id="cartCountBadge" class="text-xs font-bold px-1">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="relative w-full overflow-hidden bg-[#FAF5ED]">
+    <div class="relative w-full h-[68vh] sm:h-[75vh] md:h-[82vh] min-h-[480px] max-h-[780px] flex items-center justify-center bg-[#E5D2BC] overflow-hidden select-none">
+      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1920&q=80" alt="TODO en perfumes" class="absolute inset-0 w-full h-full object-cover object-center scale-105">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#2B140A]/45 via-[#401E10]/20 to-[#241007]/65"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(235,160,55,0.22)_0%,transparent_75%)]"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center select-none">
+        <p class="text-[11px] sm:text-xs md:text-sm uppercase tracking-[0.3em] font-medium text-[#FFF2D6] mb-3 sm:mb-5 drop-shadow-[0_2px_8px_rgba(40,15,5,0.7)]">
+          UNA FRAGANCIA PARA CADA HISTORIA
+        </p>
+        <h1 class="font-cinzel font-normal text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[0.16em] sm:tracking-[0.2em] text-[#FFFDF7] leading-none drop-shadow-[0_4px_24px_rgba(50,20,5,0.75)]">
+          TODO
+        </h1>
+        <div class="flex items-center justify-center gap-3 sm:gap-6 my-2.5 sm:my-4 text-[#FFF8EB] w-full max-w-md sm:max-w-lg drop-shadow-[0_2px_12px_rgba(50,20,5,0.65)]">
+          <span class="flex-1 h-[1px] bg-gradient-to-r from-transparent via-[#E5B56A]/80 to-[#E5B56A]"></span>
+          <span class="font-serif italic font-normal text-2xl sm:text-3xl md:text-4xl text-[#FFF8EB] tracking-wide shrink-0 px-2">en perfumes</span>
+          <span class="flex-1 h-[1px] bg-gradient-to-l from-transparent via-[#E5B56A]/80 to-[#E5B56A]"></span>
+        </div>
+      </div>
+      <div class="absolute bottom-6 sm:bottom-9 left-1/2 -translate-x-1/2 z-20">
+        <a href="#catalogo" class="flex flex-col items-center gap-1.5 text-[#FFF2D6] hover:text-[#FFDF9E] transition-all cursor-pointer group focus:outline-none">
+          <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.32em] text-[#FFF2D6] group-hover:text-[#FFDF9E] transition-colors drop-shadow-[0_2px_6px_rgba(40,15,5,0.8)]">
+            EXPLORAR
+          </span>
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FFDF9E] group-hover:text-white group-hover:translate-y-1 transition-transform drop-shadow-[0_2px_6px_rgba(40,15,5,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <main id="catalogo" class="py-14 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10 pb-6 border-b border-[#E6D7C3]">
+      <div>
+        <div class="inline-flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 bg-gradient-to-r from-[#E5A836] via-[#D67C27] to-[#B54A18] text-[#FFF9F2] text-[9px] font-bold uppercase tracking-[0.2em] rounded-[2px] shadow-[0_2px_8px_rgba(180,75,20,0.25)]">
+            40% OFF en todo el catálogo
+          </span>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#381B0E] tracking-tight">
+          Catálogo Oficial de Fragancias
+        </h2>
+      </div>
+      <div id="catalogTotalCount" class="text-xs text-[#8C6D58] font-semibold tracking-wider uppercase">
+        Mostrando fragancias
+      </div>
+    </div>
+
+    <!-- Pestañas de Categoría -->
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-8">
+      <div class="flex items-center gap-1.5 p-1.5 bg-[#EFE3D3] rounded-full border border-[#DFCEBA] overflow-x-auto shadow-inner">
+        <button onclick="setCategory('Todos')" class="tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full transition-all font-semibold bg-gradient-to-r from-[#9E441D] to-[#783010] text-white shadow-sm" data-category="Todos">Todos</button>
+        <button onclick="setCategory('Dama')" class="tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full transition-all font-semibold text-[#6E4B37] hover:text-[#381B0E]" data-category="Dama">Dama</button>
+        <button onclick="setCategory('Caballero')" class="tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full transition-all font-semibold text-[#6E4B37] hover:text-[#381B0E]" data-category="Caballero">Caballero</button>
+        <button onclick="setCategory('Gift Set')" class="tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full transition-all font-semibold text-[#6E4B37] hover:text-[#381B0E]" data-category="Gift Set">Gift Set</button>
+        <button onclick="setCategory('Favoritos')" class="tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full transition-all font-semibold text-[#6E4B37] hover:text-[#381B0E] flex items-center gap-1.5" data-category="Favoritos">
+          <svg class="w-3.5 h-3.5 text-[#B83226]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span>Favoritos</span>
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <div class="relative flex-1 sm:w-60">
+          <input id="catalogSearchInput" type="text" placeholder="Buscar fragancia, marca..." oninput="handleSearch(this.value)" class="w-full pl-8 pr-3 py-2 text-xs bg-[#FFFDF9] border border-[#E3D3C1] rounded-full text-[#381B0E] placeholder:text-[#A88876] focus:outline-none focus:border-[#C46726] shadow-sm">
+          <svg class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-[#9A7A66]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <select id="sortSelect" onchange="handleSort(this.value)" class="py-2 px-3 bg-[#FFFDF9] border border-[#E3D3C1] rounded-full text-[#381B0E] text-xs focus:outline-none focus:border-[#C46726] cursor-pointer shadow-sm">
+          <option value="featured">Orden original</option>
+          <option value="name">Nombre (A-Z)</option>
+          <option value="brand">Marca (A-Z)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Grid de Fragancias -->
+    <div id="perfumesGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+  </main>
+
+  <!-- SECCIÓN OPINIONES -->
+  <section id="opiniones" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28 border-t border-[#E6D7C3]">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-[#E6D7C3]">
+      <div>
+        <div class="inline-flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 bg-gradient-to-r from-[#E5A836] via-[#D67C27] to-[#B54A18] text-[#FFF9F2] text-[9px] font-bold uppercase tracking-[0.2em] rounded-[2px] shadow-xs">✦ Experiencias 100% Reales ✦</span>
+          <span class="text-[10px] uppercase tracking-[0.28em] text-[#C46726] font-semibold">Muro de Opiniones</span>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#381B0E] tracking-tight">Opiniones de Nuestros Clientes</h2>
+        <p class="mt-2 text-xs sm:text-sm text-[#7A5947] max-w-2xl leading-relaxed">
+          Espacio reservado exclusivamente para reseñas auténticas dejadas por clientes reales que han adquirido sus fragancias en TODO en perfumes.
+        </p>
+      </div>
+      <div>
+        <button onclick="openReviewModal()" class="px-6 py-3 bg-[#8C3C16] hover:bg-[#A5471B] text-white text-xs font-semibold uppercase tracking-[0.16em] rounded-full transition-all shadow-md flex items-center gap-2">
+          <span>Dejar mi Opinión</span>
+        </button>
+      </div>
+    </div>
+    <div id="reviewsContainer"></div>
+  </section>
+
+  <!-- MODAL DE DETALLE -->
+  <div id="productModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 md:p-6 bg-[#24120A]/75 backdrop-blur-md">
+    <div class="relative w-full max-w-4xl bg-[#FFFDF9] rounded-3xl overflow-hidden border border-[#EADBCA] shadow-2xl max-h-[92vh] flex flex-col md:flex-row">
+      <button onclick="closeProductModal()" class="absolute top-4 right-4 z-30 p-2.5 bg-[#4A2414]/90 hover:bg-[#381B0E] text-[#FFF7EC] rounded-full transition-all">✕</button>
+      <div id="modalContent" class="w-full flex flex-col md:flex-row overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- MODAL DE OPINIÓN -->
+  <div id="reviewModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#24120A]/70 backdrop-blur-md">
+    <div class="relative w-full max-w-lg bg-[#FFFDF9] rounded-3xl p-6 sm:p-8 border border-[#EADBCA] shadow-2xl">
+      <button onclick="closeReviewModal()" class="absolute top-5 right-5 p-2 text-[#7A5947] hover:text-[#381B0E] rounded-full">✕</button>
+      <div class="mb-5">
+        <span class="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#B55A1D] block mb-1">Tu Experiencia Real</span>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#381B0E]">Comparte tu Opinión</h3>
+      </div>
+      <form onsubmit="submitReview(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-[#381B0E] mb-1">Calificación en estrellas:</label>
+          <div class="flex items-center gap-1" id="starPicker"></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <input id="revName" required type="text" placeholder="Tu Nombre *" class="w-full px-3 py-2 text-xs bg-[#FAF5EE] border border-[#E3D3C1] rounded-xl text-[#381B0E]">
+          <input id="revCity" required type="text" placeholder="Ciudad *" class="w-full px-3 py-2 text-xs bg-[#FAF5EE] border border-[#E3D3C1] rounded-xl text-[#381B0E]">
+        </div>
+        <input id="revPerfume" type="text" placeholder="Perfume que compraste (opcional)" class="w-full px-3 py-2 text-xs bg-[#FAF5EE] border border-[#E3D3C1] rounded-xl text-[#381B0E]">
+        <textarea id="revComment" required rows="3" placeholder="Tu opinión sobre el aroma, fijación y entrega..." class="w-full px-3 py-2 text-xs bg-[#FAF5EE] border border-[#E3D3C1] rounded-xl text-[#381B0E]"></textarea>
+        <button type="submit" class="w-full py-3 bg-[#8C3C16] hover:bg-[#A5471B] text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow-md">Publicar mi Opinión</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT CON DATOS Y LÓGICA -->
+  <script>
+    // Colección de fragancias con URLs en la nube
+    const ALL_PERFUMES = [
+      { id: "perf170", sku: "PERF170", name: "Set Bubble Gum Moschino", gender: "Dama", brand: "Moschino", family: "Floral", notes: ["Chicle", "Frutos Rojos", "Rosa", "Cedro"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20Bubble%20Gum%20Moschino.jpg", concentration: "Eau de Parfum", duration: "6 a 8 horas", sillage: "Moderada" },
+      { id: "perf171", sku: "PERF171", name: "Set Carolina Herrera", gender: "Dama", brand: "Carolina Herrera", family: "Floral", notes: ["Jazmín", "Tuberosa", "Cacao", "Haba Tonka"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20Carolina%20Herrera.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Intensa" },
+      { id: "perf172", sku: "PERF172", name: "Set Good Girl", gender: "Dama", brand: "Carolina Herrera", family: "Ámbar Floral", notes: ["Almendra", "Café", "Jazmín Sambac", "Vainilla"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20Good%20Girl.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Intensa" },
+      { id: "perf173", sku: "PERF173", name: "Set Jean Paul Gaultier", gender: "Dama", brand: "Jean Paul Gaultier", family: "Chipre Floral", notes: ["Miel", "Gardenia", "Pachulí", "Caramelo"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20Jean%20Paul%20Gaultier.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Intensa" },
+      { id: "perf174", sku: "PERF174", name: "Set Yara", gender: "Dama", brand: "Lattafa", family: "Ámbar Vainilla", notes: ["Heliotropo", "Orquídea", "Frutas Tropicales", "Vainilla"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20Yara.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Pesada" },
+      { id: "perf175", sku: "PERF175", name: "Set YSL", gender: "Dama", brand: "Yves Saint Laurent", family: "Ámbar Floral", notes: ["Lavanda", "Flor de Naranjo", "Vainilla de Madagascar", "Almizcle"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Set%20YSL.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Intensa" },
+      { id: "perf001", sku: "PERF001", name: "360 Noir", gender: "Caballero", brand: "Perry Ellis", family: "Amaderado", notes: ["Bergamota", "Ámbar", "Cedro", "Almizcle"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/360%20Noir.jpg", concentration: "Eau de Toilette", duration: "6 a 8 horas", sillage: "Moderada" },
+      { id: "perf002", sku: "PERF002", name: "360", gender: "Caballero", brand: "Perry Ellis", family: "Aromático", notes: ["Bayas de Enebro", "Limón", "Salvia", "Vetiver"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/360.jpg", concentration: "Eau de Toilette", duration: "6 a 8 horas", sillage: "Moderada" },
+      { id: "perf003", sku: "PERF003", name: "Al Haramain Gold Crystal", gender: "Dama", brand: "Al Haramain", family: "Floral", notes: ["Rosa", "Vainilla", "Almizcle Blanco", "Ámbar"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Al%20Haramain%20Gold%20Crystal%20.jpg", concentration: "Eau de Parfum", duration: "8 a 12 horas", sillage: "Intensa" },
+      { id: "perf004", sku: "PERF004", name: "Amber Oud Gold", gender: "Caballero", brand: "Al Haramain", family: "Ámbar Vainilla", notes: ["Bergamota", "Melón", "Piña", "Ámbar"], image: "https://pffuqtzwuqqgtruvgxxx.supabase.co/storage/v1/object/public/perfumes/Amber%20Oud%20Gold%2099.9.jpg", concentration: "Extrait de Parfum", duration: "8 a 12 horas", sillage: "Pesada" }
+    ];
+
+    let activeCategory = 'Todos';
+    let searchQuery = '';
+    let sortBy = 'featured';
+    let selectedRating = 5;
+    let favoriteIds = JSON.parse(localStorage.getItem('todo_perfumes_favorites') || '[]');
+    let userReviews = JSON.parse(localStorage.getItem('todo_perfumes_reviews_real') || '[]');
+
+    function isGiftSet(p) {
+      return (p.name || '').toLowerCase().includes('set');
+    }
+
+    function renderCatalog() {
+      const list = ALL_PERFUMES.filter(p => {
+        if (activeCategory === 'Dama') return p.gender === 'Dama' && !isGiftSet(p);
+        if (activeCategory === 'Caballero') return p.gender === 'Caballero' && !isGiftSet(p);
+        if (activeCategory === 'Gift Set') return isGiftSet(p);
+        if (activeCategory === 'Favoritos') return favoriteIds.includes(p.id);
+        return true;
+      });
+
+      document.getElementById('catalogTotalCount').textContent = 'Mostrando ' + list.length + ' fragancias';
+      const grid = document.getElementById('perfumesGrid');
+      grid.innerHTML = list.map(p => \`
+        <div class="group bg-[#FFFDF9] rounded-2xl overflow-hidden border border-[#EADBCA] hover:border-[#D4982E] hover:shadow-xl transition-all flex flex-col justify-between">
+          <div class="relative aspect-[4/3] bg-[#F7EFE3] overflow-hidden">
+            <img src="\${p.image}" alt="\${p.name}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform" loading="lazy">
+            <span class="absolute top-3 left-3 px-2.5 py-1 text-[9px] uppercase font-semibold rounded-full bg-[#5E2B16]/90 text-white">\${p.gender}</span>
+            <span class="absolute top-3 right-3 px-2.5 py-1 text-[9px] uppercase font-bold rounded-full bg-[#E5A836] text-[#2C1205]">40% OFF</span>
+          </div>
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <div>
+              <div class="text-[9px] uppercase tracking-wider font-semibold text-[#B55A1D] mb-1">\${p.brand} · \${p.family}</div>
+              <h3 onclick="openProductModal('\${p.id}')" class="font-serif text-lg font-bold text-[#381B0E] hover:text-[#C46726] cursor-pointer mb-2 truncate">\${p.name}</h3>
+              <div class="text-[11px] text-[#8C6D58] mb-3 line-clamp-2"><span class="font-semibold text-[#5E2B16]">Notas: </span>\${p.notes.join(' · ')}</div>
+            </div>
+            <div class="pt-3 border-t border-[#EADBCA] flex items-center justify-between">
+              <span class="px-2 py-0.5 bg-[#5E2B16] text-[#FFE8C7] text-[9px] font-bold uppercase rounded">40% OFF</span>
+              <button onclick="openProductModal('\${p.id}')" class="text-xs font-semibold text-[#8C3C16] hover:underline">Detalles</button>
+            </div>
+          </div>
+        </div>
+      \`).join('');
+    }
+
+    function setCategory(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const isActive = btn.getAttribute('data-category') === cat;
+        btn.className = isActive
+          ? 'tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full font-semibold bg-gradient-to-r from-[#9E441D] to-[#783010] text-white shadow-sm'
+          : 'tab-btn px-4 sm:px-5 py-2 text-xs uppercase tracking-[0.16em] rounded-full font-semibold text-[#6E4B37] hover:text-[#381B0E]';
+      });
+      renderCatalog();
+    }
+
+    function openProductModal(id) {
+      const p = ALL_PERFUMES.find(i => i.id === id);
+      if (!p) return;
+      document.getElementById('modalContent').innerHTML = \`
+        <div class="md:w-5/12 bg-[#F9F3EA] p-6 flex flex-col items-center justify-center">
+          <img src="\${p.image}" alt="\${p.name}" class="w-full max-w-[240px] aspect-square object-contain drop-shadow-md">
+        </div>
+        <div class="md:w-7/12 p-6 flex flex-col justify-between bg-[#FFFDF9]">
+          <div>
+            <span class="text-xs uppercase font-semibold text-[#B55A1D]">\${p.brand}</span>
+            <h2 class="font-serif text-3xl font-bold text-[#381B0E] mb-3">\${p.name}</h2>
+            <div class="mb-4 p-3 bg-[#FAF4EB] border border-[#EADBCA] rounded-xl text-xs text-[#5E2B16]">
+              <span class="font-bold block mb-1">Notas Olfativas:</span> \${p.notes.join(' · ')}
+            </div>
+            <div class="text-xs text-[#7A5947] mb-4">
+              <p><strong>Fijación:</strong> \${p.duration} (\${p.concentration})</p>
+              <p><strong>Estela:</strong> \${p.sillage}</p>
+            </div>
+          </div>
+          <a href="https://wa.me/584249508030?text=Hola%20TODO%20en%20perfumes,%20deseo%20ordenar%20\${encodeURIComponent(p.name)}%20con%20el%2040%25%20OFF" target="_blank" class="w-full py-3 bg-[#25D366] text-white font-semibold text-xs uppercase text-center rounded-xl shadow-md">
+            Consultar por WhatsApp (40% OFF)
+          </a>
+        </div>
+      \`;
+      document.getElementById('productModal').classList.remove('hidden');
+    }
+
+    function closeProductModal() {
+      document.getElementById('productModal').classList.add('hidden');
+    }
+
+    function renderReviews() {
+      const container = document.getElementById('reviewsContainer');
+      if (userReviews.length === 0) {
+        container.innerHTML = \`
+          <div class="py-12 px-6 text-center bg-[#FFFDF9] rounded-3xl border border-[#EADBCA] max-w-lg mx-auto">
+            <p class="font-serif text-2xl font-bold text-[#381B0E] mb-2">Sé el primero en compartir tu experiencia</p>
+            <p class="text-xs text-[#7A5947] mb-4">Espacio reservado para reseñas 100% reales de nuestros clientes.</p>
+            <button onclick="openReviewModal()" class="px-5 py-2.5 bg-[#8C3C16] text-white text-xs font-semibold uppercase rounded-full">Escribir Opinión</button>
+          </div>
+        \`;
+        return;
+      }
+      container.innerHTML = \`
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          \${userReviews.map(r => \`
+            <div class="p-6 bg-[#FFFDF9] rounded-2xl border border-[#EADBCA] shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-sm text-[#381B0E]">\${r.name} (\${r.city})</h4>
+                <span class="text-[#E5A836]">★ \${r.rating}.0</span>
+              </div>
+              <p class="text-xs text-[#5C4033] mb-2">"\${r.comment}"</p>
+              <span class="text-[10px] text-[#355E40] font-semibold">✓ Opinión 100% Real</span>
+            </div>
+          \`).join('')}
+        </div>
+      \`;
+    }
+
+    function openReviewModal() {
+      document.getElementById('starPicker').innerHTML = [1,2,3,4,5].map(n => \`
+        <button type="button" onclick="selectedRating=\${n}; openReviewModal();" class="text-xl \${n <= selectedRating ? 'text-[#E5A836]' : 'text-gray-300'}">★</button>
+      \`).join('');
+      document.getElementById('reviewModal').classList.remove('hidden');
+    }
+
+    function closeReviewModal() {
+      document.getElementById('reviewModal').classList.add('hidden');
+    }
+
+    function submitReview(e) {
+      e.preventDefault();
+      const name = document.getElementById('revName').value.trim();
+      const city = document.getElementById('revCity').value.trim();
+      const comment = document.getElementById('revComment').value.trim();
+      if (!name || !comment) return;
+      userReviews.unshift({ name, city, comment, rating: selectedRating });
+      localStorage.setItem('todo_perfumes_reviews_real', JSON.stringify(userReviews));
+      closeReviewModal();
+      renderReviews();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCatalog();
+      renderReviews();
+    });
+  </script>
+</body>
 </html>
